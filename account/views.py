@@ -75,4 +75,5 @@ def login(request):
 
 def logout(request):
 	auth.logout(request)
+	print('User logged out {}'.format(User.is_authenticated))
 	return redirect('/')

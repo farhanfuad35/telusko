@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 	path('', include('travello.urls')),
+    path('places/', include('places.urls')),
     path('account/', include('account.urls')),
 	path('calc/', include('calc.urls')),	# Mention where to go
     path('admin/', admin.site.urls),

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'places.apps.PlacesConfig',
     'account.apps.AccountConfig',
     'travello.apps.TravelloConfig',
     'calc.apps.CalcConfig',
