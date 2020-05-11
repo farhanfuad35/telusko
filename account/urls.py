@@ -6,6 +6,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-	path('about/', views.about, name='about'),
-	path('',views.index,name='index'),	# Tells to run the views.home function]
+	path('registration/', views.registration, name='registration'),
+	path('login/', views.login, name='login'),
+	path('logout/', views.logout, name='logout')
 ]
+
+# Check telusko/settings.py for an important note on urlpatterns

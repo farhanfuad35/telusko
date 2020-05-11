@@ -34,3 +34,6 @@ def index(request):
 	dests = Destination.objects.all()	# Yes that's fuckin it! Amazing. fetches all the objects from the database table "Destination"
 
 	return render(request, 'index.html', {'dests':dests})
+
+def about(request):
+	return render(request, 'about.html')

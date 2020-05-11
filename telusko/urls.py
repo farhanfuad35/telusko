@@ -20,8 +20,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 	path('', include('travello.urls')),
+    path('account/', include('account.urls')),
 	path('calc/', include('calc.urls')),	# Mention where to go
     path('admin/', admin.site.urls),
 ]
+
+"""Note: Chrome by default adds a trailing slash to the url. .../registration & .../registration/ are two different pages
+django recommends using trailing slash everywhere.
+If you are at .../registration and calls 'login' from there, you will be redirected to .../login
+But if you are at .../registration/ and calls 'login', you will be redirected .../registration/login
+"""
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
