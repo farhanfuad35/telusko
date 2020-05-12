@@ -81,6 +81,24 @@ But if you are at .../registration/ and calls 'login', you will be redirected ..
 
 # To delte an app just remove its name from the INSTALLED_APPS section in project's settings.py file
 
-Credentials:
-	User: farhan
-	Password: password
+
+### Deploying on Apache: ###
+
+Make sure your virtual environment is not located in the home folder as it cannot be accessed by the user of Apache server.
+
+User the following command in terminal to add set this environmental variable that will create the virtual environment at the project folder
+
+	export PIPENV_VENV_IN_PROJECT="enabled"
+
+Full tutorial:
+Youtube: https://www.youtube.com/watch?v=VNBpdT0N8hw
+Youtube: https://www.youtube.com/watch?v=boHX307pyQ4&t=4s
+Website: https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-16-04
+Website: https://studygyaan.com/django/how-to-setup-django-applications-with-apache-and-mod-wsgi-on-ubuntu
+
+Basically same. Anyway
+
+
+### Security ###
+
+Remember to disable Debugging before making the site public. Allow hosts to `['*']` to make it public. Better limit it to specific hosts.
