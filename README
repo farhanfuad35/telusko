@@ -1,5 +1,7 @@
 # telusko
-A python Django project inspired by a youtube channel called telusko
+A python Django project inspired by a youtube channel called telusko (Yes, I regret not changing the name)
+It is a travel management website. User interface is not created by me. The front-end is basically a downloaded template.
+The purpose of this project was to learn back-end handling with python. MySQL is used as the local database.
 
 1. First create a virtual environment
 	pipenv shell
